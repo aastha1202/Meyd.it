@@ -1,11 +1,6 @@
 {
     "version": 2,
-    "builds": [
-        {
-          "src": "start.ts",
-          "use": "@vercel/node"
-        }
-      ],
+    
     "routes": [
       {
         "src": "/(.*)",
