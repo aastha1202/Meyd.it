@@ -1,8 +1,7 @@
 trigger:
 - main
 strategy:
-    matrix:
-    maxParallel: ['10', '12'] 
+    maxParallel: 10 1'
 
 pool:
   vmImage: ubuntu-latest
