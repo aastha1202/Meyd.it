@@ -37,7 +37,7 @@ const databaseConfig: DatabaseConfig = {
       client: 'mysql2',
       connection: {
         host: 'mysql-12.mysql.database.azure.com',
-        port: '3306',
+        port: 3306,
         user: 'aastha',
         password: 'palak@12',
         database: 'jobs',
