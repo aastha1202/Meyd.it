@@ -31,8 +31,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '7dcd3566-8010-4223-a589-efc82528dcb9'
-    appName: 'meydit'
     package: '$(System.DefaultWorkingDirectory)/adonis-api/**/*.zip'
     startUpCommand: 'node server.js'
   displayName: 'Azure Web App Deploy'
