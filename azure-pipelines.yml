@@ -1,5 +1,8 @@
 trigger:
 - main
+strategy:
+    matrix:
+      node: [ '10', '12' ]
 
 pool:
   vmImage: ubuntu-latest
