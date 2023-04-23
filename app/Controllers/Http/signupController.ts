@@ -5,7 +5,7 @@ import Database from '@ioc:Adonis/Lucid/Database'
 
 
 export default class SignupController {
-    async index ({ request, response }) {
+    async index ({  response }) {
         const user = await User.all()
     
         return response.json(user)
@@ -31,7 +31,7 @@ export default class SignupController {
         return response.status(201).json(user)
     }
 
-    async show ({ params, request, response }) {
+    async show ({ params,  response }) {
         // Get a single job by ID
         const user = await User.findOrFail(params.id)
 
@@ -66,7 +66,7 @@ export default class SignupController {
         response.json(jobs);
       }
 
-    async destroy ({ params, request, response }) {
+    async destroy ({ params, response }) {
         // Delete a job by ID
         const user = await User.findOrFail(params.id)
         await user.delete()

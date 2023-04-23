@@ -1,12 +1,12 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Quotation from 'App/Models/Quotations'
-import Database from '@ioc:Adonis/Lucid/Database'
+// import Database from '@ioc:Adonis/Lucid/Database'
 
 
 export default class QuotationsController {
-    public async store({ auth, request, response }: HttpContextContract) {
+    public async store({  request, response }: HttpContextContract) {
         // Get authenticated maker user
-        const maker = auth.user!
+        // const maker = auth.user!
     
         // Get job and customer from the request
         const { jobId, makerId, customerId, price, message } = request.all()

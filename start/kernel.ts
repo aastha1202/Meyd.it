@@ -10,7 +10,7 @@
 */
 
 import Server from '@ioc:Adonis/Core/Server'
-import UserTypeCheck from 'App/Middleware/UserTypeCheck'
+// import UserTypeCheck from 'App/Middleware/UserTypeCheck'
 
 
 /*

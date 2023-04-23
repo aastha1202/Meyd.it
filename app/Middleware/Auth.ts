@@ -34,13 +34,8 @@ export default class AuthMiddleware {
 
     for (let guard of guards) {
       guardLastAttempted = guard
-
-      if (await auth.use(guard).check()) {
-        /**
-         * Instruct auth to use the given guard as the default guard for
-         * the rest of the request, since the user authenticated
-         * succeeded here
-         */
+  
+      if (await auth.use(guard as keyof GuardsList).check()) {
         auth.defaultGuard = guard
         return true
       }

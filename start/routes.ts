@@ -31,9 +31,9 @@ import crypto from "crypto"
 const secretKey = crypto.randomBytes(64).toString('hex');
 
 
-const providers = [
-  '@adonisjs/cors/providers/CorsProvider'
-]
+// const providers = [
+//   '@adonisjs/cors/providers/CorsProvider'
+// ]
 
 
 

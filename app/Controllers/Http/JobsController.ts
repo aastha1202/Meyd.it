@@ -1,6 +1,6 @@
-import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+// import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Job from 'App/Models/Job'
-import {v2 as cloudinary} from 'cloudinary'
+// import {v2 as cloudinary} from 'cloudinary'
 import Database from '@ioc:Adonis/Lucid/Database'
 
 
@@ -12,7 +12,7 @@ import Database from '@ioc:Adonis/Lucid/Database'
 
 
 export default class JobsController {
-    async index ({ request, response }) {
+    async index ({  response }) {
         // Get all jobs
         const jobs = await Job.all()
     
@@ -106,7 +106,7 @@ export default class JobsController {
       response.status(200).send({ message: 'Quotation count updated successfully' })
     }
     
-    async destroy ({ params, request, response }) {
+    async destroy ({ params, response }) {
         // Delete a job by ID
         const job = await Job.findOrFail(params.id)
         await job.delete()
