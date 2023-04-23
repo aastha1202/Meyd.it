@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ace serve --watch",
-    "build": "tsc",
-    "start": "node build/server.js",
+    "dev": "nodemon server.js",
+    "build": "node ace build --production",
+    "start": "node server.js",
     "test": "node ace test"
   },
   "devDependencies": {
