@@ -1,7 +1,8 @@
 trigger:
 - main
 strategy:
-    maxParallel: 10,12
+    matrix:
+    maxParallel: ['10', '12'] 
 
 pool:
   vmImage: ubuntu-latest
@@ -33,6 +34,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
+    appName: 'meydit'
     package: '$(System.DefaultWorkingDirectory)/adonis-api/**/*.zip'
     startUpCommand: 'node server.js'
   displayName: 'Azure Web App Deploy'
