@@ -41,7 +41,6 @@ const databaseConfig: DatabaseConfig = {
         user: Env.get('MYSQL_USER','root'),
         password: Env.get('MYSQL_PASSWORD', ''),
         database: Env.get('MYSQL_DB_NAME'),
-        connectTimeout: 50000,
         ssl: {
           rejectUnauthorized: true,
         }
