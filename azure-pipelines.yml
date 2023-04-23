@@ -1,7 +1,6 @@
 trigger:
 - main
 strategy:
-    matrix:
     maxParallel: 10,12
 
 pool:
