@@ -36,11 +36,11 @@ const databaseConfig: DatabaseConfig = {
     mysql: {
       client: 'mysql2',
       connection: {
-        host: Env.get('MYSQL_HOST','localhost'),
-        port: Env.get('MYSQL_PORT'),
-        user: Env.get('MYSQL_USER','root'),
-        password: Env.get('MYSQL_PASSWORD', ''),
-        database: Env.get('MYSQL_DB_NAME'),
+        host: 'mysql-12.mysql.database.azure.com',
+        port: 3306,
+        user: 'aastha',
+        password: 'palak@12',
+        database: 'jobs',
         ssl: {
           rejectUnauthorized: true,
         }
