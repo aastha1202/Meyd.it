@@ -39,7 +39,7 @@ const databaseConfig: DatabaseConfig = {
         host: 'bhfi7imcuepjaalbuy4d-mysql.services.clever-cloud.com',
         port: 3306,
         user: 'uci6r69cr504wfpp',
-        password: 'uci6r69cr504wfpp',
+        password: 'DigmIlE2YrHEWNHy2aQ8',
         database: 'bhfi7imcuepjaalbuy4d',
         ssl: {
           rejectUnauthorized: false,
