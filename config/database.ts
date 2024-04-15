@@ -42,7 +42,7 @@ const databaseConfig: DatabaseConfig = {
         password: 'uci6r69cr504wfpp',
         database: 'bhfi7imcuepjaalbuy4d',
         ssl: {
-          rejectUnauthorized: true,
+          rejectUnauthorized: false,
         }
       },
       migrations: {
