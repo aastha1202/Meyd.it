@@ -36,11 +36,11 @@ const databaseConfig: DatabaseConfig = {
     mysql: {
       client: 'mysql2',
       connection: {
-        host: 'mysql-12.mysql.database.azure.com',
+        host: 'bhfi7imcuepjaalbuy4d-mysql.services.clever-cloud.com',
         port: 3306,
-        user: 'aastha',
-        password: 'palak@12',
-        database: 'jobs',
+        user: 'uci6r69cr504wfpp',
+        password: 'uci6r69cr504wfpp',
+        database: 'bhfi7imcuepjaalbuy4d',
         ssl: {
           rejectUnauthorized: true,
         }
